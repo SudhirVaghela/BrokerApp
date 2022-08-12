@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">BrokerApp</string>
+    //utilities
+    <string name="utilities_title">Utilities</string>
+    <string name="mcx">MCX</string>
+    <string name="calculator">Calculator</string>
+    <string name="news">News</string>
+
+    // MCX strings //
+
+    <string name="mcxtitle">MCX</string>
+    <string name="cotton">Cotton</string>
+    <string name="price">Price</string>
+    <string name="date">22 oct 2090</string>
+    <string name="fut">FUT</string>
+    <string name="up_down">Up/Down</string>
+    <string name="Open">Open</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="prev_close">Prev.close</string>
+
+
+    // calculator strings //
+
+    // ginning tab strings //
+    <string name="calculatortitle">Calculator</string>
+    <string name="tab_ginning">Ginning</string>
+    <string name="tab_spinning">Spinning</string>
+    <string name="tab_export">Exports</string>
+    <string name="kapas">Kapas</string>
+    <string name="expenses">Expenses</string>
+    <string name="cotton_seed">Cotton Seed</string>
+    <string name="our_turn">Our Turn</string>
+    <string name="shortage">Shortage</string>
+    <string name="cost_of_cotton">Cost Of cotton</string>
+    <string name="rs_per_kg">Rs/20 kg</string>
+    <string name="rs_kg">Rs/kg</string>
+    <string name="rs_per_candy">Rs/Candy</string>
+
+    // spinning tab strings //
+
+    <string name="yarn_count">Yarn Count</string>
+    <string name="cotton_rate">Cotton Rate</string>
+    <string name="yield">Yield</string>
+    <string name="waste_recovery">Waste Recovery</string>
+    <string name="conversion_cost">Conversion Cost</string>
+    <string name="yarn_cost">Yarn Cost</string>
+    <string name="rs_k_count">Rs/K\n/Count</string>
+
+    // export tab strings //
+
+    <string name="exchange_rate">Exchange Rate</string>
+    <string name="usd_inr">USD/INR</string>
+    <string name="export_rate">Export Rate</string>
+    <string name="cents_per_bales">Cents/Bales</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // news tab strings //
+
+    <string name="news_feed">News Feed</string>
+    <string name="news_time">2h ago</string>
+    <string name="newslines">Global warming is a hike in the average global temperature on earth.
+        Burning of excess fossil fuel and the release of toxic fumes into the atmosphere
+        widespread and unspecific</string>
+
+    // Home screen strings //
+
+    <string name="postedby">Posted by</string>
+    <string name="base">Base</string>
+    <string name="prev">Prev</string>
+    <string name="bale">Bales(Sold/Total)</string>
+    <string name="shankar6">Shankar 6</string>
+    <string name="my_post_title">My post</string>
+    <string name="tab_active">Active</string>
+    <string name="tab_completed">Completed</string>
+    <string name="bales_300">300 Bales</string>
+    <string name="uhml">UHML(mm)</string>
+    <string name="mic">MIC(mm)</string>
+    <string name="rd">RD(mm)</string>
+    <string name="cg">CG(mm)</string>
+    <string name="sfi">SFI(mm)</string>
+    <string name="trash">Trash</string>
+    <string name="moisture">Moisture</string>
+    <string name="participants">Participants</string>
+
+
+    // My work strings //
+
+    <string name="my_work">My work</string>
+    <string name="home">Home</string>
+    <string name="my_clients">My client</string>
+    <string name="my_contract">My Contract</string>
+    <string name="reports">Reports</string>
+    <string name="my_request">My Request</string>
+    <string name="my_earning">My Earning</string>
+    <string name="shareapp">Share App</string>
+    <string name="my_profile">My profile</string>
+    <string name="change_pass">Change password</string>
+    <string name="log_out">Logout</string>
+
+    // reports strings //
+
+    <string name="company_name">Company Name</string>
+    <string name="my_contarcttitle">My Contract</string>
+    <string name="changepass_title">Change Password</string>
+    <string name="company">Company</string>
+    <string name="download">Download</string>
+    <string name="all">All</string>
+    <string name="buyer_seller">Buyer/Seller</string>
+    <string name="filter">Filter</string>
+    <string name="date_range">Date Range</string>
+    <string name="time_duration">By time duration</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="custome">Custome</string>
+    <string name="by_product">By Product</string>
+
+    // my clients strings //
+
+    <string name="myclients">My Clients</string>
+    <string name="buyers">Buyers</string>
+    <string name="buyer">Buyer</string>
+    <string name="sellers">Sellers</string>
+    <string name="companytag">Company</string>
+    <string name="deals">Deals</string>
+    <string name="bales">Bales</string>
+    <string name="joiningdate">Joining Date</string>
+
+
+    // change password strings //
+
+    <string name="current_pass">Current password</string>
+    <string name="new_pass">New password</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="set_pass">Set Password</string>
+
+    // my Requests strings //
+
+    <string name="requests">Requests</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="address">Address</string>
+    <string name="panofcompany">Pan of company</string>
+
+
+    // my profile strings //
+
+
+    <string name="profiletitle">Profile</string>
+    <string name="tab_personal_detail">Personal Details</string>
+    <string name="tab_company_detail">Company Details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="contact_person_name">Contact Person Name</string>
+    <string name="contact_person_mobile">Contact Person Mobile Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="website">Website</string>
+    <string name="footer">Footer</string>
+    <string name="mycode">My Code</string>
+    <string name="brokeragedetail">Brokerage Details</string>
+    <string name="brokerage">Last 3 years brokerage in terms of bales</string>
+
+    <string name="header">Header</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="partnership">Partnership</string>
+    <string name="companypan">Pan of company</string>
+    <string name="sellertype">Seller type</string>
+    <string name="ginner">Ginner</string>
+    <string name="reg_number">Mill reg number</string>
+    <string name="reg_date">Mill reg date</string>
+    <string name="reg_as">Reg as</string>
+    <string name="msme">MSME</string>
+    <string name="year">Year</string>
+    <string name="cr2">2 Cr</string>
+    <string name="cr3">3 Cr</string>
+    <string name="cr4">4 Cr</string>
+    <string name="locationdetail">Location Details</string>
+    <string name="station">Station</string>
+    <string name="district">District</string>
+    <string name="state">State</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="gst_number">GST Number</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="branch_addresh">Branch Address</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="referral_code">Referral code</string>
+    <string name="stamp">Stamp</string>
+    <string name="shapur">Shapur</string>
+    <string name="edit_company_detail">Edit Company Detail</string>
+    <string name="type">Type</string>
+    <string name="mill_reg_number">Mill reg number</string>
+    <string name="mill_reg_date">Mill/Registration Date</string>
+    <string name="registration_as">Registration as</string>
+    <string name="station_name">Station Name</string>
+    <string name="update">Update</string>
+    <string name="turnover_in_crore">Tornover in crore(rs.)</string>
+
+    // my earnings strings //
+    <string name="earning">My Earning</string>
+    <string name="totalearning">Total Earning</string>
+    <string name="dates">Date</string>
+    <string name="earningtotal">Earning</string>
+
+    // my contract strings //
+
+    <string name="seller">Seller</string>
+    <string name="byseller">By Seller</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+    // my Home strings //
+    <string name="earningTitle">This month earning</string>
+
+
+</resources>

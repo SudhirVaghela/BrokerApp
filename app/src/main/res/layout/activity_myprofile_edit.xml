@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    tools:context=".MyprofileEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_editprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/light_grey">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@color/light_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/backarrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/backarrow"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/editprofile"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_editprofile"
+        android:background="@drawable/custome_bg_white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_buyerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Name of Buyer"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top"
+                    android:hint="Postal Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="7"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_locationdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/locationdetail"
+                    android:textColor="@color/time_grey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/state"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/state_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_border">
+
+                    <Spinner
+                        android:id="@+id/state_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:rotation="-90"
+                        android:src="@drawable/backarrow" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/district_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/state_ll"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/district"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/district_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/district_Title"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_border">
+
+                    <Spinner
+                        android:id="@+id/district_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:rotation="-90"
+                        android:src="@drawable/backarrow" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_companydetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_state_name"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/tab_company_detail"
+                    android:textColor="@color/time_grey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/website"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/header"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/uploadHeader"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custome_box"
+                    android:padding="30dp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:id="@+id/tv_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/footer"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/uploadFooter"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custome_box"
+                    android:padding="30dp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:id="@+id/tv_mycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_footer"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/mycode"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_mycode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_stamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mycode_no"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/stamp"
+                    android:textColor="@color/time_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/uploadStamp"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custome_box"
+                    android:padding="30dp"
+                    android:src="@drawable/upload" />
+
+                <EditText
+                    android:id="@+id/edt_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="website"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_brokeragedetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/brokeragedetail"
+                    android:textColor="@color/time_grey"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_gstno"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="GST No"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:theme="@style/AppTheme" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyWorkFragment">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/my_work"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_rl"
+        android:background="@drawable/custome_background">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_report"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_reports"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_report"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/reports"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_myclient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_reports"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/iv_client"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_myclient"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_client"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/my_clients"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mycontract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_myclient"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_contract"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_mycontract"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_contract"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/my_contract"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_myprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_mycontract"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_myprofile"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_profile"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/my_profile"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_myrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_myprofile"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_request"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_myrequest"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_request"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/my_request"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_myrequest"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_changepass"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_changepass"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_changepass"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/change_pass"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_myearning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_changepass"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_earning"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_myearning"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/iv_earning"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/my_earning"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_myearning"
+            android:layout_alignStart="@id/rl_reports"
+            android:layout_alignEnd="@id/rl_reports"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custome_background">
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_imageview"
+                android:padding="9dp"
+                android:src="@drawable/ic_logout"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/iv_logout"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/log_out"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

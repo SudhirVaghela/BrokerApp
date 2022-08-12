@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_myprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/light_grey">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@color/light_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/backarrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:text="@string/profiletitle"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <ImageButton
+            android:id="@+id/iv_edit"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/light_grey"
+            android:padding="3dp"
+            android:src="@drawable/edit"
+            app:tint="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_myprofile"
+        android:background="@drawable/custome_bg_white">
+
+        <RelativeLayout
+            android:id="@+id/rl_userprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_userprofileimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/userpic" />
+
+            <RelativeLayout
+                android:id="@+id/rl_name_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/civ_userprofileimg">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="John Deo"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_userprofile">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_userdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_personaldetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/personal_details"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_person_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_personaldetail"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/contact_person_name"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_person_name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="smith maria"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_person_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/contact_person_mobile"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_person_mobile"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1234567890"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_emailaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_mobile"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/email_address"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_emailaddress"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="john@gmail.com"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_locationdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_email"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/locationdetail"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_locationdetails"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/station"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_station"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/shapur"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_station_name"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/district"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_district_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_district"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Rajkot"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_district_name"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/state"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_state_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Gujarat"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_companydetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state_name"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/tab_company_detail"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_websitelbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_companydetails"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/website"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_websitelbl"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="www.website.com"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/website"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/header"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_header"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header" />
+
+                    <TextView
+                        android:id="@+id/tv_footer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_header"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/footer"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_footer"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/footer" />
+
+                    <TextView
+                        android:id="@+id/tv_mycode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_footer"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/mycode"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/mycode_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_mycode"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="123456789"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycode_no"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/stamp"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_stamp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stamp" />
+
+                    <TextView
+                        android:id="@+id/tv_brokeragedetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_stamp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/brokeragedetail"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_gstnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_brokeragedetails"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/gst_number"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gstdata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_gstnumber"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1133245678"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

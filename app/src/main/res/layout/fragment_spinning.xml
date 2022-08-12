@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpinningFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/yarn_count"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_yarn_count"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/yarn_count"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/cotton_rate"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_cottonrate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/cotton_rate"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/rs_per_candy"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/cotton_rate"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_cottonrate_kg"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/cotton_rate"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/rs_kg"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+
+            android:padding="5dp"
+            android:text="@string/yield"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_yield"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/yield"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="%"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+
+            android:padding="5dp"
+            android:text="@string/waste_recovery"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_wrecovery"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/waste_recovery"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/rs_kg"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+
+            android:padding="5dp"
+            android:text="@string/conversion_cost"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_conversioncost"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custome_edittext"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="@string/conversion_cost"
+            android:textColor="@color/tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/rs_k_count"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/yarn_cost"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_yarn_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:text="@string/rs_kg"
+            android:textColor="@color/tab_text_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

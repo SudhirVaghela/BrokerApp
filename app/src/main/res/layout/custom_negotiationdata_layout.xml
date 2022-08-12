@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/negotiationCom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Maria Smith"
+            android:textColor="@color/time_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/companyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTxt"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/tab_text_color_op"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/company"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyTitle"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Trident Ltd"
+            android:textColor="@color/time_grey"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/negotiationData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/negotiationCom_rl"
+        android:layout_marginTop="5dp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/userData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/postedby"
+                android:textColor="@color/tab_text_color_op"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/userPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postedBy"
+                android:fontFamily="@font/poppins_regular"
+                android:text="John Doe"
+                android:textColor="@color/time_grey"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/price_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prevTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/prev"
+                android:textColor="@color/tab_text_color_op"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/prevAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prevTitle"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rs. 45000(300)"
+                android:textColor="@color/time_grey"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/newAmount_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newAmountTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="New"
+                android:textColor="@color/time_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/newTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newAmountTitle"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="rs. 46000(200)"
+                android:textColor="@color/time_grey"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

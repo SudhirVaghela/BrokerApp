@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    tools:context=".RequestDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_myprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/light_grey">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@color/light_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/backarrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:text="@string/profiletitle"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_myprofile"
+        android:background="@drawable/custome_bg_white">
+
+        <RelativeLayout
+            android:id="@+id/rl_userprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_userprofileimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/userpic" />
+
+            <RelativeLayout
+                android:id="@+id/rl_name_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/civ_userprofileimg">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="John Deo"
+                    android:textColor="@color/time_grey"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_userType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_username"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Buyer Type"
+                    android:textColor="@color/tab_text_color_op"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttons_ll"
+            android:scrollbars="none"
+            android:layout_below="@id/rl_userprofile">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_userdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_personaldetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/personal_details"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_person_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_personaldetail"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/contact_person_name"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_person_name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="smith maria"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_person_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/contact_person_mobile"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_person_mobile"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1234567890"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_emailaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_mobile"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/email_address"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_emailaddress"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="john@gmail.com"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_locationdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_email"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/locationdetail"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_locationdetails"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/station"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_station"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/shapur"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_station_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/district"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_district_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_district"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Rajkot"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_district_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/state"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_state_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Gujarat"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addressTtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state_name"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/address"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_addressTtl"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Cecelia Champman Mississipi 96522"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_companydetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_address"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/tab_company_detail"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_companydetails"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/type"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_userType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_type"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/ginner"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_companyPAN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_userType"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/panofcompany"
+                        android:textColor="@color/tab_text_color_op"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_panNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_companyPAN"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="AAOC3355UW"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_panNum"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/bank_details"
+                        android:textColor="@color/time_grey"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_gstNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_bankdetails"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/gst_number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gstData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_gstNum"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1133245678"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_gstData"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/pan_number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pandata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pan_number"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="212323345454"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_banknameTtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pandata"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/bank_name"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_banknameTtl"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="SBI"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_account_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_bankname"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/account_holder_name"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_holdername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_account_holder"
+
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="john"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_branch_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_holdername"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/branch_addresh"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_br_addresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_branch_Address"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="manalato mississippie"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_ifsc_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_br_addresh"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/tab_text_color_op"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/ifsc_code"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ifscNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_ifsc_code"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="SBI12345678"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_ifscNumber"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/stamp"
+                        android:textColor="@color/time_grey"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_stamp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stamp" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/buttons_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2.1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_rejectbtn"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/reject"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_red"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/custome_button"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

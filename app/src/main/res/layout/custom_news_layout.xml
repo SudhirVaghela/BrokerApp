@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_shortnews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".6"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/newslines"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_news"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_vertical"
+                android:layout_weight="1.4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gw2" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_timeupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_news"
+        android:layout_alignStart="@id/rl_news">
+
+        <TextView
+            android:id="@+id/tv_newstime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="2hago"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
